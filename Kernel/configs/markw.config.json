@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi4",
-      "repo": "https://github.com/SonicBSV/android_kernel_xiaomi_markw-4.9",
-      "branch": "master",
-      "device": "markw",
-      "defconfig": "markw_defconfig"
+      "name": "m11q",
+      "repo": "https://github.com/ifoodplayer/android_kernel_samsung_a11q",
+      "branch": "android-10.0",
+      "device": "sdm450",
+      "defconfig": "samsung/afaneh_a11q_defconfig"
     },
     "toolchains": [
       {
@@ -36,7 +36,7 @@
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "clang",
+      "CC": "CROSS_COMPILE",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "aarch64-linux-android-",
